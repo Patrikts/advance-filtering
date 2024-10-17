@@ -1,5 +1,11 @@
 function Input() {
-  return <div>Input</div>
+  return   (
+    <label className='side-label-container'>
+    <input type='radio' name='test' />
+    <span className='checkmark'></span>
+  </label>
+
+  )
 }
 
 export default Input;
