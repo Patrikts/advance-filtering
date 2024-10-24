@@ -66,11 +66,11 @@ function App() {
   ));
 }
 
-filteredData
+const result = filteredData(producs, selectedCategory, query)
 
 return (
     <>
-      <Sidebar />
+      <Sidebar handleChange={handleChange} />
       <Navigation />
       <Recommended />
       <Products />

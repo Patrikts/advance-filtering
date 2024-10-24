@@ -1,7 +1,7 @@
-function Input() {
+function Input({ handleChange, value, title, name, color }) {
   return   (
     <label className='side-label-container'>
-    <input type='radio' name='test' />
+    <input onChange={handleChange} type='radio' name='test' />
     <span className='checkmark'></span>
   </label>
 
