@@ -52,7 +52,8 @@ function App() {
     );
   }   
   
-  return filteredProducts.map(({img, title, star, reviews, prevPrice}) => (
+  return filteredProducts.map(
+    ({img, title, star, reviews, newPrice, prevPrice}) => (
     <Card 
     key={Math.random()}
     img={img}
@@ -62,9 +63,10 @@ function App() {
     newPrice={newPrice}
     prevPrice={prevPrice}
     />
-  ))
-
+  ));
 }
+
+filteredData
 
 return (
     <>
