@@ -3,6 +3,7 @@ import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
+import Card from "./components/Card";
 
 // Database
 import products from './db/data'
@@ -66,14 +67,14 @@ function App() {
   ));
 }
 
-const result = filteredData(producs, selectedCategory, query)
+const result = filteredData(products, selectedCategory, query)
 
 return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Navigation />
-      <Recommended />
-      <Products />
+      <Navigation query={query} handleInputChange={handleInputChange}/>
+      <Recommended handleClick={handleClick}/>
+      <Products result={result}/>
     </>
   );
 }
