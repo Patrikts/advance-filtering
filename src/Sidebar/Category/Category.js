@@ -19,8 +19,8 @@ function Category({handleChange}) {
       />
       <input
         handleChange={handleChange}
-        value="falts"
-        title='Falts'
+        value="flats"
+        title='Flats'
         name='test'
       />     
       <input

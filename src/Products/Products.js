@@ -1,3 +1,4 @@
+import Card from "../components/Card"
 import "./Products.css";
 
 function Products({ result }) {
