@@ -25,58 +25,43 @@ li {
   cursor: pointer;
 }
 
-
-/* MEDIA QUERIES (tablets) */
-@media screen and (max-width: 1024px) {
+/* Styles for devices with a maximum width of 1200px (Tablets and Small Desktops) */
+@media (max-width: 1200px) {
+    .btns {
+      padding: 8px 16px;
+    }
+  
     body {
-        font-size: 1rem;
+      font-size: 15px; /* Slightly smaller font size */
     }
-    
-    .container {
-        width: var(--container-width-md);
+  }
+  
+  /* Styles for devices with a maximum width of 768px (Tablets) */
+  @media (max-width: 768px) {
+    .btns {
+      padding: 6px 12px;
+      margin-right: 4px;
     }
-
-    section {
-        padding: 8rem 0;
+  
+    body {
+      font-size: 14px;
     }
-
-    section > p {
-        width: 72%;
-        margin-bottom: 3rem;
+  }
+  
+  /* Styles for devices with a maximum width of 480px (Mobile Phones) */
+  @media (max-width: 480px) {
+    .btns {
+      padding: 5px 10px;
+      width: 100%; /* Full-width buttons */
+      margin-right: 0; /* Remove margin */
     }
-
-    h1 {
-        font-size: 2rem;
+  
+    body {
+      font-size: 13px;
     }
-}
-
-
-
-
-
-/* MEDIA QUERIES (phones) */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 2.4rem;
+  
+    a {
+      font-size: 14px; /* Adjust link size for mobile */
     }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    h4 {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 0.6rem 1.5rem;
-    }
-
-    section > p {
-        width: var(--container-width-md);
-    }
-}
+  }
+  
